@@ -10,8 +10,8 @@ http://example.com/2023/07/03/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E5%8D%A0
 http://example.com/2023/04/24/git%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B/
 http://example.com/2023/04/08/replit%E4%B8%AD%E5%AE%89%E8%A3%85wordpress/
 http://example.com/
-http://example.com/categories/%E5%85%B6%E5%AE%83/
 http://example.com/categories/Linux/
+http://example.com/categories/%E5%85%B6%E5%AE%83/
 http://example.com/categories/uncategorized/
 http://example.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
 http://example.com/categories/%E8%AE%A1%E7%BB%84/
