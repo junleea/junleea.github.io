@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Hexo迁移、问题处理</title>
+      <link href="//%5Bobject%20Object%5D/2023/09/14/Hexo%E8%BF%81%E7%A7%BB%E3%80%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/"/>
+      <url>//%5Bobject%20Object%5D/2023/09/14/Hexo%E8%BF%81%E7%A7%BB%E3%80%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、Wordpress到Hexo迁移"><a href="#一、Wordpress到Hexo迁移" class="headerlink" title="一、Wordpress到Hexo迁移"></a>一、Wordpress到Hexo迁移</h2><p><a href="https://link.zhihu.com/?target=https://hexo.io/zh-cn/docs/migration.html%23WordPress">Hexo迁移</a><br>安装插件:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure><p>从wordpress下载：工具 -&gt; 导出 -&gt; wordpress导出 -&gt;导出所有文章<br>下载xml文件，导入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo migrate wordpress &quot;xml文件目录&quot;</span><br></pre></td></tr></table></figure><h2 id="二、Hexo问题处理"><a href="#二、Hexo问题处理" class="headerlink" title="二、Hexo问题处理"></a>二、Hexo问题处理</h2><h3 id="1-提交失败"><a href="#1-提交失败" class="headerlink" title="1.提交失败"></a>1.提交失败</h3><p>问题： ! [rejected]        master -&gt; master (fetch first)<br>error: failed to push some refs to</p><p>解决办法：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git pull --rebase origin master</span><br><span class="line"></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><hr><h3 id="2-编译问题"><a href="#2-编译问题" class="headerlink" title="2.编译问题"></a>2.编译问题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save or yarn add hexo-renderer-pug hexo-renderer-stylus</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其它 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Shell简单语法</title>
       <link href="//%5Bobject%20Object%5D/2023/09/12/shell%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95/"/>
       <url>//%5Bobject%20Object%5D/2023/09/12/shell%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95/</url>
@@ -17,6 +42,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
       
     </entry>
     
@@ -36,6 +67,14 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
       
     </entry>
     
@@ -74,6 +113,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
       
     </entry>
     
@@ -207,6 +252,14 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> CentOS </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
       
     </entry>
     
