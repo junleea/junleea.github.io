@@ -25,8 +25,8 @@ https://junleea.github.io/tags/GitHub/
 https://junleea.github.io/tags/CentOS/
 https://junleea.github.io/tags/Java/
 https://junleea.github.io/tags/Linux/
-https://junleea.github.io/categories/Linux/
 https://junleea.github.io/categories/uncategorized/
+https://junleea.github.io/categories/Linux/
 https://junleea.github.io/categories/%E5%85%B6%E5%AE%83/
 https://junleea.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
 https://junleea.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/
