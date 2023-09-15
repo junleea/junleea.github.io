@@ -6,7 +6,7 @@
   <link href="https://junleea.github.io/atom.xml" rel="self"/>
   
   <link href="https://junleea.github.io/"/>
-  <updated>2023-09-14T06:24:05.135Z</updated>
+  <updated>2023-09-15T03:45:21.336Z</updated>
   <id>https://junleea.github.io/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>Hexo迁移、问题处理</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/09/14/Hexo%E8%BF%81%E7%A7%BB%E3%80%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86undefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/09/14/Hexo%E8%BF%81%E7%A7%BB%E3%80%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86undefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/09/14/Hexo%E8%BF%81%E7%A7%BB%E3%80%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/09/14/Hexo%E8%BF%81%E7%A7%BB%E3%80%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/</id>
     <published>2023-09-14T05:58:40.000Z</published>
-    <updated>2023-09-14T06:24:05.135Z</updated>
+    <updated>2023-09-15T03:45:21.336Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="一、Wordpress到Hexo迁移"><a href="#一、Wordpress到Hexo迁移" class="headerlink" title="一、Wordpress到Hexo迁移"></a>一、Wordpress到Hexo迁移</h2><p><a href="https://link.zhihu.com/?target=https://hexo.io/zh-cn/docs/migration.html%23WordPress">Hexo迁移</a><br>安装插件:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure><p>从wordpress下载：工具 -&gt; 导出 -&gt; wordpress导出 -&gt;导出所有文章<br>下载xml文件，导入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo migrate wordpress &quot;xml文件目录&quot;</span><br></pre></td></tr></table></figure><h2 id="二、Hexo问题处理"><a href="#二、Hexo问题处理" class="headerlink" title="二、Hexo问题处理"></a>二、Hexo问题处理</h2><h3 id="1-提交失败"><a href="#1-提交失败" class="headerlink" title="1.提交失败"></a>1.提交失败</h3><p>问题： ! [rejected]        master -&gt; master (fetch first)<br>error: failed to push some refs to</p><p>解决办法：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git pull --rebase origin master</span><br><span class="line"></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><hr><h3 id="2-编译问题"><a href="#2-编译问题" class="headerlink" title="2.编译问题"></a>2.编译问题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save or yarn add hexo-renderer-pug hexo-renderer-stylus</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="一、Wordpress到Hexo迁移"><a href="#一、Wordpress到Hexo迁移" class="headerlink" title="一、Wordpress到Hexo迁移"></a>一、Wordpress到Hexo迁移</h2><p><a href="https://link.zhihu.com/?target=https://hexo.io/zh-cn/docs/migration.html%23WordPress">Hexo迁移</a><br>安装插件:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure><p>从wordpress下载：工具 -&gt; 导出 -&gt; wordpress导出 -&gt;导出所有文章<br>下载xml文件，导入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo migrate wordpress &quot;xml文件目录&quot;</span><br></pre></td></tr></table></figure><h2 id="二、Hexo问题处理"><a href="#二、Hexo问题处理" class="headerlink" title="二、Hexo问题处理"></a>二、Hexo问题处理</h2><h3 id="1-提交失败"><a href="#1-提交失败" class="headerlink" title="1.提交失败"></a>1.提交失败</h3><p>问题： ! [rejected]        master -&gt; master (fetch first)<br>error: failed to push some refs to</p><p>解决办法：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git pull --rebase origin master</span><br><span class="line"></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><hr><h3 id="2-编译问题"><a href="#2-编译问题" class="headerlink" title="2.编译问题"></a>2.编译问题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save or yarn add hexo-renderer-pug hexo-renderer-stylus</span><br></pre></td></tr></table></figure><h3 id="3-Hexo打开文章变成下载解决"><a href="#3-Hexo打开文章变成下载解决" class="headerlink" title="3.Hexo打开文章变成下载解决"></a>3.Hexo打开文章变成下载解决</h3><p>解决方法：将hexo的config文件下的permalink的最后缺少&#x2F;<br>正确例子：permalink: “&#x2F;:categories&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;“</p>]]></content>
     
     
       
@@ -42,8 +42,8 @@
   
   <entry>
     <title>Shell简单语法</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/09/12/shell%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95undefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/09/12/shell%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95undefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/09/12/shell%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/09/12/shell%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95/</id>
     <published>2023-09-12T14:16:10.000Z</published>
     <updated>2023-09-14T05:52:42.497Z</updated>
     
@@ -66,8 +66,8 @@
   
   <entry>
     <title>GitHub中用hexo搭建个人主页</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/09/11/github%E4%B8%AD%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5undefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/09/11/github%E4%B8%AD%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5undefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/09/11/github%E4%B8%AD%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/09/11/github%E4%B8%AD%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/</id>
     <published>2023-09-11T04:00:51.000Z</published>
     <updated>2023-09-14T05:52:33.190Z</updated>
     
@@ -92,8 +92,8 @@
   
   <entry>
     <title>Ubuntu下Docker安装SQL Server</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/08/06/ubuntu%E4%B8%8Bdocker%E5%AE%89%E8%A3%85sql-serverundefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/08/06/ubuntu%E4%B8%8Bdocker%E5%AE%89%E8%A3%85sql-serverundefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/08/06/ubuntu%E4%B8%8Bdocker%E5%AE%89%E8%A3%85sql-server/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/08/06/ubuntu%E4%B8%8Bdocker%E5%AE%89%E8%A3%85sql-server/</id>
     <published>2023-08-06T08:07:36.000Z</published>
     <updated>2023-09-12T14:28:16.472Z</updated>
     
@@ -114,8 +114,8 @@
   
   <entry>
     <title>linux查看端口占用情况</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/07/03/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5undefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/07/03/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5undefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/07/03/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/07/03/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</id>
     <published>2023-07-03T04:41:53.000Z</published>
     <updated>2023-09-14T05:53:14.334Z</updated>
     
@@ -139,8 +139,8 @@
   
   <entry>
     <title>Git简单使用流程</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/04/24/git%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8Bundefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/04/24/git%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8Bundefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/04/24/git%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/04/24/git%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B/</id>
     <published>2023-04-24T03:06:19.000Z</published>
     <updated>2023-09-14T02:16:09.104Z</updated>
     
@@ -161,8 +161,8 @@
   
   <entry>
     <title>Replit中安装WordPress</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/04/08/replit%E4%B8%AD%E5%AE%89%E8%A3%85wordpressundefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/04/08/replit%E4%B8%AD%E5%AE%89%E8%A3%85wordpressundefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/04/08/replit%E4%B8%AD%E5%AE%89%E8%A3%85wordpress/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/04/08/replit%E4%B8%AD%E5%AE%89%E8%A3%85wordpress/</id>
     <published>2023-04-08T05:54:48.000Z</published>
     <updated>2023-09-12T14:28:16.458Z</updated>
     
@@ -186,8 +186,8 @@
   
   <entry>
     <title>云</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/02/11/%E4%BA%91undefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/02/11/%E4%BA%91undefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/02/11/%E4%BA%91/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/02/11/%E4%BA%91/</id>
     <published>2023-02-11T06:30:26.000Z</published>
     <updated>2023-09-14T02:14:45.527Z</updated>
     
@@ -208,8 +208,8 @@
   
   <entry>
     <title>海明码</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/02/07/%E6%B5%B7%E6%98%8E%E7%A0%81undefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/02/07/%E6%B5%B7%E6%98%8E%E7%A0%81undefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/02/07/%E6%B5%B7%E6%98%8E%E7%A0%81/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/02/07/%E6%B5%B7%E6%98%8E%E7%A0%81/</id>
     <published>2023-02-07T07:43:18.000Z</published>
     <updated>2023-09-12T14:46:40.288Z</updated>
     
@@ -230,8 +230,8 @@
   
   <entry>
     <title>循环冗余校验码</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/02/07/%E5%BE%AA%E7%8E%AF%E5%86%97%E4%BD%99%E6%A0%A1%E9%AA%8C%E7%A0%81undefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/02/07/%E5%BE%AA%E7%8E%AF%E5%86%97%E4%BD%99%E6%A0%A1%E9%AA%8C%E7%A0%81undefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/02/07/%E5%BE%AA%E7%8E%AF%E5%86%97%E4%BD%99%E6%A0%A1%E9%AA%8C%E7%A0%81/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/02/07/%E5%BE%AA%E7%8E%AF%E5%86%97%E4%BD%99%E6%A0%A1%E9%AA%8C%E7%A0%81/</id>
     <published>2023-02-07T07:13:15.000Z</published>
     <updated>2023-09-12T15:34:13.058Z</updated>
     
@@ -253,8 +253,8 @@
   
   <entry>
     <title>Linux安装code-server</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/02/04/linux%E5%AE%89%E8%A3%85code-serverundefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/02/04/linux%E5%AE%89%E8%A3%85code-serverundefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/02/04/linux%E5%AE%89%E8%A3%85code-server/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/02/04/linux%E5%AE%89%E8%A3%85code-server/</id>
     <published>2023-02-04T13:13:13.000Z</published>
     <updated>2023-09-12T15:32:47.973Z</updated>
     
@@ -276,8 +276,8 @@
   
   <entry>
     <title>centOS手动安装Java环境</title>
-    <link href="https://junleea.github.io/[object%20Object]/2023/02/02/centos%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85java%E7%8E%AF%E5%A2%83undefined"/>
-    <id>https://junleea.github.io/[object%20Object]/2023/02/02/centos%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85java%E7%8E%AF%E5%A2%83undefined</id>
+    <link href="https://junleea.github.io/[object%20Object]/2023/02/02/centos%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85java%E7%8E%AF%E5%A2%83/"/>
+    <id>https://junleea.github.io/[object%20Object]/2023/02/02/centos%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85java%E7%8E%AF%E5%A2%83/</id>
     <published>2023-02-02T13:29:04.000Z</published>
     <updated>2023-09-14T05:50:16.512Z</updated>
     
